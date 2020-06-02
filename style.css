@@ -43,17 +43,17 @@ html, body {
             width: 0;
       }
       to {
-            width: 18em;
+            width: 11em;
       }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 768) {
       @keyframes typewriter {
             from {
                   width: 0;
             }
             to {
-                  width: 17em;
+                  width: 11em;
             }
       }
 }
@@ -305,7 +305,7 @@ h6 {
 }
 
 .project1::after {
-      content: "timeless flow.";
+      content: "light tee.";
       font-family: "Roboto Mono";
       font-size: 36px;
       position: relative;
@@ -323,7 +323,7 @@ h6 {
 }
 
 .project2::after {
-      content: "foretime.";
+      content: "dark tee.";
       font-family: "Roboto Mono";
       font-size: 36px;
       position: relative;
@@ -341,7 +341,7 @@ h6 {
 }
 
 .project3::after {
-      content: "never again.";
+      content: "cannabazoid.";
       font-family: "Roboto Mono";
       font-size: 36px;
       position: relative;
@@ -359,7 +359,7 @@ h6 {
 }
 
 .project4::after {
-      content: "departure.";
+      content: "limit break.";
       font-family: "Roboto Mono";
       font-size: 36px;
       position: relative;
