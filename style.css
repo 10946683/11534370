@@ -47,13 +47,13 @@ html, body {
       }
 }
 
-@media(max-width: 768) {
+@media(max-width: 768px) {
       @keyframes typewriter {
             from {
                   width: 0;
             }
             to {
-                  width: 11em;
+                  width: 10em;
             }
       }
 }
