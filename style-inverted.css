@@ -386,6 +386,111 @@ h6 {
       }
 }
 
+/*--------------- content section --------------- */
+h6 {
+      text-align: center;
+}
+
+.vertical {
+      margin-top: 40px;
+      border-left: 1px solid #0f0f0f;
+      height: 80px;
+      position: absolute;
+      left: 50%;
+}
+
+.content {
+      height: 500px;
+}
+
+.content1 {
+      background: url("img/content/content_01.jpg") no-repeat 50% 50%;
+      background-size: cover;
+}
+
+.content1::after {
+      content: "Marcus Aurelius.";
+      font-family: "Roboto Mono";
+      font-size: 36px;
+      position: relative;
+      color: #0f0f0f;
+      display: block;
+      top: 8%;
+      left: -60%;
+      right: 0;
+      bottom: 0;
+}
+
+.content2 {
+      background: url("img/content/content_02.jpg") no-repeat 50% 50%;
+      background-size: cover;
+}
+
+.content2::after {
+      content: "Niel Degrasse Tyson.";
+      font-family: "Roboto Mono";
+      font-size: 36px;
+      position: relative;
+      color: #0f0f0f;
+      display: block;
+      top: 80%;
+      left: 90%;
+      right: 0;
+      bottom: 0;
+}
+
+.content3 {
+      background: url("img/content/content_03.jpg") no-repeat 50% 50%;
+      background-size: cover;
+}
+
+.content3::after {
+      content: "William Stukeley.";
+      font-family: "Roboto Mono";
+      font-size: 36px;
+      position: relative;
+      color: #0f0f0f;
+      display: block;
+      top: 80%;
+      left: -50%;
+      right: 0;
+      bottom: 0;
+}
+
+.content4 {
+      background: url("img/content/content_04.jpg") no-repeat 50% 50%;
+      background-size: cover;
+}
+
+.content4::after {
+      content: "Friedriech Nietzsche.";
+      font-family: "Roboto Mono";
+      font-size: 36px;
+      position: relative;
+      color: #0f0f0f;
+      display: block;
+      top: 10%;
+      left: 90%;
+      right: 0;
+      bottom: 0;
+}
+
+@media(max-width: 768px) {
+      .shirt {
+            width: 90% !important;
+            margin: 14px auto;
+      }
+
+      .vertical {
+            display: none;
+      }
+
+      .content1::after, .content2::after, .content3::after, .content4::after {
+            display: none;
+      }
+}
+
+
 /*--------------- footer section --------------- */
 .collab {
       text-align: right;
