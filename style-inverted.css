@@ -282,7 +282,7 @@ nav #menu li a:hover {
       }
 }
 
-/*--------------- projects section --------------- */
+/*--------------- shirts section --------------- */
 h6 {
       text-align: center;
 }
@@ -295,16 +295,16 @@ h6 {
       left: 50%;
 }
 
-.project {
+.shirt {
       height: 500px;
 }
 
-.project1 {
+.shirt1 {
       background: url("img/shirts/light_tee.jpg") no-repeat 50% 50%;
       background-size: cover;
 }
 
-.project1::after {
+.shirt1::after {
       content: "light tee.";
       font-family: "Roboto Mono";
       font-size: 36px;
@@ -317,12 +317,12 @@ h6 {
       bottom: 0;
 }
 
-.project2 {
+.shirt2 {
       background: url(img/shirts/dark_tee.jpg) no-repeat 50% 50%;
       background-size: cover;
 }
 
-.project2::after {
+.shirt2::after {
       content: "dark tee.";
       font-family: "Roboto Mono";
       font-size: 36px;
@@ -335,12 +335,12 @@ h6 {
       bottom: 0;
 }
 
-.project3 {
+.shirt3 {
       background: url(img/shirts/cannabazoid.jpg) no-repeat 50% 50%;
       background-size: cover;
 }
 
-.project3::after {
+.shirt3::after {
       content: "cannabazoid.";
       font-family: "Roboto Mono";
       font-size: 36px;
@@ -353,12 +353,12 @@ h6 {
       bottom: 0;
 }
 
-.project4 {
+.shirt4 {
       background: url(img/shirts/limit_break.jpg) no-repeat 50% 50%;
       background-size: cover;
 }
 
-.project4::after {
+.shirt4::after {
       content: "limit break.";
       font-family: "Roboto Mono";
       font-size: 36px;
@@ -372,7 +372,7 @@ h6 {
 }
 
 @media(max-width: 768px) {
-      .project {
+      .shirt {
             width: 90% !important;
             margin: 14px auto;
       }
@@ -381,7 +381,7 @@ h6 {
             display: none;
       }
 
-      .project1::after, .project2::after, .project3::after, .project4::after {
+      .shirt1::after, .shirt2::after, .shirt3::after, .shirt4::after {
             display: none;
       }
 }
@@ -516,7 +516,8 @@ h6 {
 }
 
 .image {
-      background: url(https://images.unsplash.com/photo-1540885762261-a2ca01f290f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2468&q=80) no-repeat 50% 70%;
+      background: url("img/bg-white.png") no-repeat 50% 50%;
+      background-size: contain;
 }
 
 /*--------------- contact form --------------- */
@@ -552,7 +553,7 @@ h6 {
       border: none;
       resize: vertical;
       background: transparent;
-      color: #0f0f0f;
+      color: #fff;
       font-weight: bolder;
 }
 
