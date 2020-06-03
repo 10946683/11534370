@@ -6,8 +6,8 @@ html, body {
       width: 100%;
       height: 100%;
       font-family: "Roboto Mono" !important;
-      background: #0f0f0f !important;
-      color: #fff !important;
+      background: #fff !important;
+      color: #0f0f0f !important;
 }
 
 .whitespace {
@@ -70,7 +70,7 @@ html, body {
 /*--------------- navigation --------------- */
 nav {
       width: 100%;
-      background: #0f0f0f;
+      background: #fff;
       height: 80px;
       position: fixed;
       z-index: 1;
@@ -85,7 +85,7 @@ nav #brand {
 }
 
 nav #brand a {
-      color: #fff;
+      color: #0f0f0f;
       transition: all 0.3s ease-out;
 }
 
@@ -114,7 +114,7 @@ nav #menu li span {
 }
 
 nav #menu li a {
-      color: #fff;
+      color: #0f0f0f;
 }
 
 nav #menu li a:hover {
@@ -150,7 +150,7 @@ nav #menu li a:hover {
       z-index: 1;
       top: 0px;
       position: fixed;
-      background: #0f0f0f;
+      background: #fff;
       width: 100%;
       height: 100%;
       visibility: hidden;
@@ -184,7 +184,7 @@ nav #menu li a:hover {
 }
 
 #resize #menu li a {
-      color: #fff;
+      color: #0f0f0f;
 }
 
 #resize #menu li a:hover {
@@ -262,8 +262,8 @@ nav #menu li a:hover {
       text-shadow: 0;
       width: 13px;
       height: 13px;
-      border-bottom: 2px solid #fff;
-      border-right: 2px solid #fff;
+      border-bottom: 2px solid #0f0f0f;
+      border-right: 2px solid #0f0f0f;
       -webkit-transform: translate(-50%, 0) rotate(45deg);
       animation: fade_move_down 3s cubic-bezier(0.19, 1, 0.22, 1) infinite;
 }
@@ -289,7 +289,7 @@ h6 {
 
 .vertical {
       margin-top: 40px;
-      border-left: 1px solid #fff;
+      border-left: 1px solid #0f0f0f;
       height: 80px;
       position: absolute;
       left: 50%;
@@ -309,7 +309,7 @@ h6 {
       font-family: "Roboto Mono";
       font-size: 36px;
       position: relative;
-      color: #fff;
+      color: #0f0f0f;
       display: block;
       top: 8%;
       left: -60%;
@@ -327,7 +327,7 @@ h6 {
       font-family: "Roboto Mono";
       font-size: 36px;
       position: relative;
-      color: #fff;
+      color: #0f0f0f;
       display: block;
       top: 80%;
       left: 90%;
@@ -345,7 +345,7 @@ h6 {
       font-family: "Roboto Mono";
       font-size: 36px;
       position: relative;
-      color: #fff;
+      color: #0f0f0f;
       display: block;
       top: 80%;
       left: -50%;
@@ -363,7 +363,7 @@ h6 {
       font-family: "Roboto Mono";
       font-size: 36px;
       position: relative;
-      color: #fff;
+      color: #0f0f0f;
       display: block;
       top: 10%;
       left: 90%;
@@ -413,7 +413,7 @@ h6 {
 
 .info li {
       font-weight: lighter;
-      color: #fff;
+      color: #0f0f0f;
       font-size: 18px;
       padding-left: 20px;
 }
@@ -552,7 +552,7 @@ h6 {
       border: none;
       resize: vertical;
       background: transparent;
-      color: #fff;
+      color: #0f0f0f;
       font-weight: bolder;
 }
 
