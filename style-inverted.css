@@ -8,6 +8,7 @@ html, body {
       font-family: "Roboto Mono" !important;
       background: #fff !important;
       color: #0f0f0f !important;
+      text-shadow: 0px 1px royalblue,1px 0px red,-1px 0px green;
 }
 
 .whitespace {
@@ -115,6 +116,7 @@ nav #menu li span {
 
 nav #menu li a {
       color: #0f0f0f;
+      text-shadow: 0px 1px royalblue,1px 0px red;
 }
 
 nav #menu li a:hover {
@@ -243,6 +245,10 @@ nav #menu li a:hover {
       line-height: 58px;
 }
 
+.header{
+      text-shadow: 0px 2px royalblue,2px 0px red;
+}
+
 @media(max-width: 768px) {
       .header h1 {
             font-size: 26px;
@@ -259,14 +265,62 @@ nav #menu li a:hover {
       font-size: 20px;
       z-index: 0;
       text-decoration: none;
-      text-shadow: 0;
       width: 13px;
       height: 13px;
-      border-bottom: 2px solid #0f0f0f;
-      border-right: 2px solid #0f0f0f;
+      border-bottom: 3px solid #0f0f0f;
+      border-right: 3px solid #0f0f0f;
       -webkit-transform: translate(-50%, 0) rotate(45deg);
       animation: fade_move_down 3s cubic-bezier(0.19, 1, 0.22, 1) infinite;
 }
+.scroll-down-r {
+      position: absolute;
+      left: 50.1%;
+      bottom: 100px;
+      display: block;
+      text-align: center;
+      font-size: 20px;
+      z-index: 0;
+      text-decoration: none;
+      width: 13px;
+      height: 13px;
+      border-bottom: 1px solid royalblue;
+      border-right: 1px solid royalblue;
+      -webkit-transform: translate(-50%, 0) rotate(45deg);
+      animation: fade_move_down 3s cubic-bezier(0.19, 1, 0.22, 1) infinite;
+}
+.scroll-down-b {
+      position: absolute;
+      left: 49.9%;
+      bottom: 100px;
+      display: block;
+      text-align: center;
+      font-size: 20px;
+      z-index: 0;
+      text-decoration: none;
+      width: 13px;
+      height: 13px;
+      border-bottom: 1px solid red;
+      border-right: 1px solid red;
+      -webkit-transform: translate(-50%, 0) rotate(45deg);
+      animation: fade_move_down 3s cubic-bezier(0.19, 1, 0.22, 1) infinite;
+}
+.scroll-down-g {
+      position: absolute;
+      left: 50%;
+      bottom: 101px;
+      display: block;
+      text-align: center;
+      font-size: 20px;
+      z-index: 0;
+      text-decoration: none;
+      width: 13px;
+      height: 13px;
+      border-bottom: 1px solid green;
+      border-right: 1px solid green;
+      -webkit-transform: translate(-50%, 0) rotate(45deg);
+      animation: fade_move_down 3s cubic-bezier(0.19, 1, 0.22, 1) infinite;
+}
+
 
 @keyframes fade_move_down {
       0% {
@@ -295,49 +349,31 @@ h6 {
       left: 50%;
 }
 
-.shirt {
-      height: 500px;
-}
-
-.shirt1 {
-      background: url("img/shirts/light_tee.jpg") no-repeat 50% 50%;
-      background-size: cover;
-}
 
 .shirt1::after {
-      content: "light tee.";
+      content: "ivory.";
       font-family: "Roboto Mono";
       font-size: 36px;
       position: relative;
       color: #0f0f0f;
       display: block;
-      top: 8%;
-      left: -60%;
+      top: -20%;
+      left: -30%;
       right: 0;
       bottom: 0;
-}
-
-.shirt2 {
-      background: url(img/shirts/dark_tee.jpg) no-repeat 50% 50%;
-      background-size: cover;
 }
 
 .shirt2::after {
-      content: "dark tee.";
+      content: "ebony.";
       font-family: "Roboto Mono";
       font-size: 36px;
       position: relative;
       color: #0f0f0f;
       display: block;
-      top: 80%;
-      left: 90%;
+      top: -20%;
+      left: 105%;
       right: 0;
       bottom: 0;
-}
-
-.shirt3 {
-      background: url(img/shirts/cannabazoid.jpg) no-repeat 50% 50%;
-      background-size: cover;
 }
 
 .shirt3::after {
@@ -351,11 +387,6 @@ h6 {
       left: -50%;
       right: 0;
       bottom: 0;
-}
-
-.shirt4 {
-      background: url(img/shirts/limit_break.jpg) no-repeat 50% 50%;
-      background-size: cover;
 }
 
 .shirt4::after {
@@ -399,15 +430,6 @@ h6 {
       left: 50%;
 }
 
-.content {
-      height: 500px;
-}
-
-.content1 {
-      background: url("img/content/content_01.jpg") no-repeat 50% 50%;
-      background-size: cover;
-}
-
 .content1::after {
       content: "Marcus Aurelius.";
       font-family: "Roboto Mono";
@@ -415,15 +437,10 @@ h6 {
       position: relative;
       color: #0f0f0f;
       display: block;
-      top: 8%;
-      left: -60%;
+      top: -50%;
+      left: -70%;
       right: 0;
       bottom: 0;
-}
-
-.content2 {
-      background: url("img/content/content_02.jpg") no-repeat 50% 50%;
-      background-size: cover;
 }
 
 .content2::after {
@@ -433,15 +450,10 @@ h6 {
       position: relative;
       color: #0f0f0f;
       display: block;
-      top: 80%;
-      left: 90%;
+      top: -50%;
+      left: 105%;
       right: 0;
       bottom: 0;
-}
-
-.content3 {
-      background: url("img/content/content_03.jpg") no-repeat 50% 50%;
-      background-size: cover;
 }
 
 .content3::after {
@@ -455,11 +467,6 @@ h6 {
       left: -50%;
       right: 0;
       bottom: 0;
-}
-
-.content4 {
-      background: url("img/content/content_04.jpg") no-repeat 50% 50%;
-      background-size: cover;
 }
 
 .content4::after {
@@ -711,3 +718,110 @@ textarea:focus {
 .next p {
       text-align: right;
 }
+
+/*------------------added-----------------------*/
+/*--drop down menu--*/
+    
+    .menu-dropdown .dropbtn {
+      border: none;
+      outline: none;
+      color: black;
+      background-color: inherit;
+      margin: 0;
+    }
+
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #ffffff;
+      min-width: auto;
+      box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    }
+    
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 0px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .menu-dropdown:hover, .menu-dropdown .dropbtn:hover{
+      cursor: default;
+    }
+    .dropdown-content a:hover {
+      background-color: #f9f9f9;
+    }
+    
+    .menu-dropdown:hover .dropdown-content {
+      display: block;
+    }
+    
+/*---facebook-reponsive---*/
+  @media(max-width: 768px) {
+      .facebook-responsive {
+            overflow:hidden;
+            padding-bottom:56.25%;
+            position:relative;
+            height:0;
+      }
+        
+      .facebook-responsive iframe {
+            left:0;
+            top:0;
+            height:100%;
+            width:100%;
+            position:absolute;
+      }
+      }
+
+.shirt_img, .content_img, .partner_logo{
+      max-width: 100%;
+      height: auto;
+}
+
+
+.content_mob{
+      visibility: hidden;
+}
+
+@media(max-width: 768px){
+      .content-full{
+            visibility: hidden;
+      }
+      .content_mob{
+            visibility: visible;
+      }
+      .partner_logo{
+            width: 50%;
+      }
+}
+
+
+    
+    /* The container <div> - needed to position the dropdown content */
+    
+    /* Dropdown Content (Hidden by Default) */
+    .dropbtn{
+          background-color: transparent;
+          border: none;
+          text-shadow: 0px 1px royalblue,1px 0px red,-1px 0px green;
+
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #ffffff;
+      min-width: auto;
+      box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {background-color: rgb(252, 252, 252);}
+    
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {display: block;}
+    
