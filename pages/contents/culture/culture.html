@@ -4,15 +4,15 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="author" content="tusslife">
+      <meta name="author" content="tusslife">
 
-      <title>Content | TUSS</title>
+      <title>Culture | TUSS</title>
 
       <!-- add icon link-->
-      <link rel="shortcut icon" href="img/favicon.ico">
+      <link rel="shortcut icon" href="../../../img/favicon.ico">
 
       <!-- stylesheet -->
-      <link rel="stylesheet" href="style-inverted.css">
+      <link rel="stylesheet" href="../../../css/style-inverted.css">
 
       <!-- bootstrap cdns -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -21,9 +21,12 @@
       <!-- google fonts -->
       <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
 
+      <!-- terminal effect -->
+      <script src="../../../js/t.min.js"></script>
+
       <!-- for on scroll animations -->
-      <link rel="stylesheet" href="animate.css">
-      <script src="wow.min.js"></script>
+      <link rel="stylesheet" href="../../../css/animate.css">
+      <script src="../../../js/wow.min.js"></script>
 
 </head>
 <body>
@@ -32,34 +35,59 @@
             <!--------------- navbar starts here --------------->
             <nav>
                 <span id="brand">
-                      <a href="index.html"><img src="img/tuss.png" alt="TUSS"></a>
+                      <a href="../../../index.html"><img src="../../../img/tuss.png" alt="TUSS"></a>
                 </span>
 
-                  <ul id="menu">
-                        <li><a href="index.html">home<span>.</span></a></li>
-                        <li><a href="shirt.html">shirt<span>.</span></a></li>
-                        <li><a href="content.html">content<span>.</span></a></li>
-                        <li><a href="partner.html">partner<span>.</span></a></li>
-                        <li><a href="about.html">about us<span>.</span></a></li>
-                  </ul>
+                <ul id="menu">
+                  <li><a href="../../../index.html">home<span>.</span></a></li>
+                  <li><a href="../../../pages/shirt.html">shirt<span>.</span></a></li>
+                  <li><div class="dropdown">
+                        <a href="../../../pages/content.html" class="dropbtn">content<span>.</span></a>
+                        <div class="dropdown-content">
+                              <a href="../../../pages/contents/culture/culture.html">culture<span>.</span></a>
+                              <a href="../../../pages/contents/life/life.html">life<span>.</span></a>
+                              <a href="../../../pages/contents/art/art.html">art<span>.</span></a>
+                        </div>
+                      </div>
+                  </li>
+                  <li><a href="../../../pages/content.html">video<span>.</span></a></li>
+                  <li><a href="../../../pages/partner.html">partner<span>.</span></a></li>
+                  <li><a href="../../../pages/about.html">about us<span>.</span></a></li>
+            </ul>
 
-                  <div id="toggle">
-                        <div class="span">menu</div>
-                  </div>
+                <div id="toggle">
+                      <div class="span">menu</div>
+                </div>
 
-            </nav>
+          </nav>
 
-            <div id="resize">
-                  <div class="close-btn">close</div>
+          <div id="resize">
+            <div class="close-btn">close</div>
 
-                  <ul id="menu">
-                        <li><a href="index.html">home<span>.</span></a></li>
-                        <li><a href="shirt.html">shirt<span>.</span></a></li>
-                        <li><a href="content.html">content<span>.</span></a></li>
-                        <li><a href="partner.html">partner<span>.</span></a></li>
-                        <li><a href="about.html">about us<span>.</span></a></li>
-                  </ul>
+            <ul id="menu">
+              <li><a href="../../../index.html">home<span>.</span></a></li>
+              <li><a href="../../../pages/shirt.html">shirt<span>.</span></a></li>
+              <li><a class="content-btn">content<span>.</span></a></li>
+              <li><a href="../../../pages/partner.html">partner<span>.</span></a></li>
+              <li><a href="../../../pages/about.html">about us<span>.</span></a></li>
+            </ul>
+        </div>
+
+        <div id="sub-menu-resize">
+            <div class=row>
+                  <div class="back-btn">back </div>
+                  <div class="close-content-btn">close </div>
+
             </div>
+
+            <ul id="menu">
+              <li><a href="../../../pages/content.html">all content<span>.</span></a></li>
+              <li><a href="../../../pages/contents/culture/culture.html">culture<span>.</span></a></li>
+              <li><a href="../../../pages/contents/life/life.html">life<span>.</span></a></li>
+              <li><a href="../../../pages/contents/art/art.html">art<span>.</span></a></li>
+            </ul>
+        </div>        
+            <!--------------- navbar ends here --------------->
 
             <!--------------- navbar ends here --------------->
 
@@ -73,7 +101,7 @@
                         <div class="row">
                               <div class="col-lg-8">
 
-                                    <h3 class="wow fadeInUp" data-wow-delay="1s">content.</h3><br>
+                                    <h3 class="wow fadeInUp" data-wow-delay="1s">Culture.</h3><br>
                                     <p class="wow fadeInUp" data-wow-delay="1.2s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, accusantium sint quod voluptatem dolorum, quaerat, ut iusto cumque magni ab repudiandae, quasi minus unde temporibus nulla eum eaque! Placeat praesentium sunt suscipit laboriosam deserunt commodi atque corporis, iure maiores dicta, fugit similique.</p>
 
                               </div>
@@ -92,11 +120,11 @@
                   <div class="row">
                         <div class="col-lg-1"></div>
                         <div class="col-lg-5 content wow fadeInUp" data-wow-delay="1.4s" onclick="location.href='content1.html'">
-                              <img class="content_img" src="img/content/content_07.jpg" alt="" width="auto">
+                              <img class="content_img" src="../../../img/content/content_07.jpg" alt="" width="auto">
                               <br class="content-mob"><br class="content-mob">
                         </div>
                         <div class="col-lg-5 content wow fadeInUp" data-wow-delay="1.4s" onclick="location.href='content1.html'">
-                              <img class="content_img" src="img/content/content_08.jpg" alt="" width="auto">
+                              <img class="content_img" src="../../../img/content/content_08.jpg" alt="" width="auto">
                               <br class="content-mob"><br class="content-mob">
                         </div>
                         <div class="col-lg-1"></div>
@@ -104,30 +132,30 @@
 
                   <div class="row">
                         <div class="col-lg-4 content wow fadeInUp" onclick="location.href='content2.html'">
-                              <img class="content_img" src="img/content/content_06.jpg" alt="" width="auto">
+                              <img class="content_img" src="../../../img/content/content_06.jpg" alt="" width="auto">
                               <br class="content-mob"><br class="content-mob">
                         </div>
                         <div class="col-lg-4 content wow fadeInUp" onclick="location.href='content2.html'">
-                              <img class="content_img" src="img/content/content_05.jpg" alt="" width="auto">
+                              <img class="content_img" src="../../../img/content/content_05.jpg" alt="" width="auto">
                               <br class="content-mob"><br class="content-mob">
                         </div>
                         <div class="col-lg-4 content wow fadeInUp" onclick="location.href='content2.html'">
-                              <img class="content_img" src="img/content/content_04.jpg" alt="" width="auto">
+                              <img class="content_img" src="../../../img/content/content_04.jpg" alt="" width="auto">
                               <br class="content-mob"><br class="content-mob">
                         </div>
                   </div>
 
                   <div class="row">
                         <div class="col-lg-4 content wow fadeInUp" onclick="location.href='content2.html'">
-                              <img class="content_img" src="img/content/content_06.jpg" alt="" width="auto">
+                              <img class="content_img" src="../../../img/content/content_03.jpg" alt="" width="auto">
                               <br class="content-mob"><br class="content-mob">
                         </div>
                         <div class="col-lg-4 content wow fadeInUp" onclick="location.href='content2.html'">
-                              <img class="content_img" src="img/content/content_05.jpg" alt="" width="auto">
+                              <img class="content_img" src="../../../img/content/content_02.jpg" alt="" width="auto">
                               <br class="content-mob"><br class="content-mob">
                         </div>
                         <div class="col-lg-4 content wow fadeInUp" onclick="location.href='content2.html'">
-                              <img class="content_img" src="img/content/content_04.jpg" alt="" width="auto">
+                              <img class="content_img" src="../../../img/content/content_01.jpg" alt="" width="auto">
                               <br class="content-mob"><br class="content-mob">
                         </div>
                   </div>
@@ -136,19 +164,14 @@
             </div>
 
             <!--------------- projects section ends here --------------->
+            <hr>
 
             <!--------------- footer starts here --------------->
             <div class="footer">
                   <div class="container">
-                        <hr>
-
-
                         <div class="hr">
                               <div class="row"></div>
                         </div>
-
-                        <br><br>
-
                         <div class="info">
                               <div class="row">
                                     <div class="col-lg-4" id="personal">
@@ -162,7 +185,7 @@
 
                                           <ul>
                                                 <a href="https://www.facebook.com/tusslife" target="_blank"><li id="fb" class="wow fadeInUp" data-wow-delay="0.4s">fb</li></a>
-                                                <a href="https://www.instagram.com/tusslife.ph/" target="_blank"><li id="ig" class="wow fadeInUp" data-wow-delay="0.6s">ig</li></a>
+                                                <a href="https://www.instagram.com/tusslife.ph" target="_blank"><li id="ig" class="wow fadeInUp" data-wow-delay="0.6s">ig</li></a>
                                           </ul>
 
                                           <br><br>
@@ -177,10 +200,9 @@
                         </div>
                   </div>
             </div>
-
             <!--------------- footer ends here --------------->
 
-            <br><br><br><br>
+            <br><br>
 
       </div>
 
@@ -191,6 +213,7 @@
       <script type="text/javascript">
 
       // navigation starts here
+
       $("#toggle").click(function() {
             $(this).toggleClass('on');
             $("#resize").toggleClass("active");
@@ -206,6 +229,21 @@
             $("#resize").toggleClass("active");
       });
 
+      $(".content-btn").click(function() {
+            $(this).toggleClass('on');
+            $("#sub-menu-resize").toggleClass("active");
+      });
+
+      $(".back-btn").click(function() {
+            $(this).toggleClass('on');
+            $("#sub-menu-resize").toggleClass("active");
+            $("#resize").toggleClass("active");
+      });
+
+      $(".close-content-btn").click(function() {
+            $(this).toggleClass('on');
+            $("#sub-menu-resize").toggleClass("active");
+      });
       // navigation ends here
 
       // nav animation
@@ -226,7 +264,6 @@
       // nav animation ends
 
       new WOW().init();
-
 
       </script>
 </body>
