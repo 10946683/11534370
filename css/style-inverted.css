@@ -637,11 +637,6 @@ h6 {
       margin-top: 120px;
 }
 
-.image {
-      background: url("img/bg-white.png") no-repeat 50% 50%;
-      background-size: contain;
-}
-
 /*--------------- contact form --------------- */
 
 #contact-form {
@@ -787,7 +782,7 @@ textarea:focus {
       }
       }
 
-.shirt_img, .content_img, .partner_logo{
+.shirt_img, .content_img, .partner_logo, .about_img{
       max-width: 100%;
       height: auto;
 }
@@ -809,29 +804,53 @@ textarea:focus {
       }
 }
 
-
     
-    /* The container <div> - needed to position the dropdown content */
-    
-    /* Dropdown Content (Hidden by Default) */
-    .dropbtn{
-          background-color: transparent;
-          border: none;
-          text-shadow: 0px 1px royalblue,1px 0px red,-1px 0px green;
+.dropbtn{
+      background-color: transparent;
+      border: none;
+      text-shadow: 0px 1px royalblue,1px 0px red,-1px 0px green;
 
-    }
-    .dropdown-content {
+}
+.dropdown-content {
       display: none;
       position: absolute;
       background-color: #ffffff;
       min-width: auto;
       box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);
       z-index: 1;
-    }
+}
     
-    /* Change color of dropdown links on hover */
-    .dropdown-content a:hover {background-color: rgb(252, 252, 252);}
+.dropdown-content a:hover {
+      background-color: rgb(252, 252, 252);
+}
+
+.dropdown:hover .dropdown-content {
+      display: block;
+}
     
-    /* Show the dropdown menu on hover */
-    .dropdown:hover .dropdown-content {display: block;}
-    
+.read-more, .view-more{
+      text-decoration: none;
+      text-align: center;
+}
+.read-more-btn, .view-more-btn{
+      color: black;
+      padding: 8px;
+      cursor: pointer;
+      font-weight: 300;
+      line-height: 80px;
+      transition: all 0.1s ease-out;
+      border: 2px solid rgba(0,0,0,0.2);
+      text-shadow: 0px 1px royalblue,1px 0px red,2px 2px green;
+}
+
+.read-more-btn:hover, .view-more-btn:hover{
+      text-decoration: none;
+      color: black;
+      padding: 12px;
+      cursor: pointer;
+      font-weight: 300;
+      line-height: 80px;
+      transition: all 0.1s ease-out;
+      border: 2px solid rgba(0, 0, 0, 0.6);
+      text-shadow: 0px 1px royalblue,1px 0px red,2px 2px green;
+}
