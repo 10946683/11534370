@@ -12,7 +12,7 @@
       <link rel="shortcut icon" href="img/favicon.ico">
 
       <!-- stylesheet -->
-      <link rel="stylesheet" href="style-inverted.css">
+      <link rel="stylesheet" href="./css/style-inverted.css">
 
       <!-- bootstrap cdns -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -22,12 +22,11 @@
       <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
 
       <!-- terminal effect -->
-      <script src="t.min.js"></script>
+      <script src="./js/t.min.js"></script>
 
       <!-- for on scroll animations -->
-      <link rel="stylesheet" href="animate.css">
-      <script src="wow.min.js"></script>
-      <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+      <link rel="stylesheet" href="./css/animate.css">
+      <script src="./js/wow.min.js"></script>
 
 </head>
 <body>
@@ -36,14 +35,14 @@
             <!--------------- navbar starts here --------------->
             <nav>
                 <span id="brand">
-                      <a href="index.html"><img src="img/tuss.png" alt="TUSS"></a>
+                      <a href="./index.html"><img src="img/tuss.png" alt="TUSS"></a>
                 </span>
 
                 <ul id="menu">
-                  <li><a href="index.html">home<span>.</span></a></li>
-                  <li><a href="shirt.html">shirt<span>.</span></a></li>
+                  <li><a href="./index.html">home<span>.</span></a></li>
+                  <li><a href="./pages/shirt.html">shirt<span>.</span></a></li>
                   <li><div class="dropdown">
-                        <a href="content.html" class="dropbtn">content<span>.</span></a>
+                        <a href="./pages/content.html" class="dropbtn">content<span>.</span></a>
                         <div class="dropdown-content">
                           <a href="#">culture.</a>
                           <a href="#">life.</a>
@@ -51,9 +50,9 @@
                         </div>
                       </div>
                   </li>
-                  <li><a href="content.html">video<span>.</span></a></li>
-                  <li><a href="partner.html">partner<span>.</span></a></li>
-                  <li><a href="about.html">about us<span>.</span></a></li>
+                  <li><a href="./pages/content.html">video<span>.</span></a></li>
+                  <li><a href="./pages/partner.html">partner<span>.</span></a></li>
+                  <li><a href="./pages/about.html">about us<span>.</span></a></li>
             </ul>
 
                 <div id="toggle">
@@ -63,16 +62,31 @@
           </nav>
 
           <div id="resize">
-                <div class="close-btn">close</div>
+            <div class="close-btn">close</div>
 
-                <ul id="menu">
-                  <li><a href="index.html">home<span>.</span></a></li>
-                  <li><a href="shirt.html">shirt<span>.</span></a></li>
-                  <li><a href="content.html">content<span>.</span></a></li>
-                  <li><a href="partner.html">partner<span>.</span></a></li>
-                  <li><a href="about.html">about us<span>.</span></a></li>
-                </ul>
+            <ul id="menu">
+              <li><a href="./index.html">home<span>.</span></a></li>
+              <li><a href="./pages/shirt.html">shirt<span>.</span></a></li>
+              <li><a class="content-btn">content<span>.</span></a></li>
+              <li><a href="./pages/partner.html">partner<span>.</span></a></li>
+              <li><a href="./pages/about.html">about us<span>.</span></a></li>
+            </ul>
+        </div>
+
+        <div id="sub-menu-resize">
+            <div class=row>
+                  <div class="back-btn">back </div>
+                  <div class="close-content-btn">close </div>
+
             </div>
+
+            <ul id="menu">
+              <li><a href="./pages/content.html">all content<span>.</span></a></li>
+              <li><a href="./pages/contents/culture/culture.html">culture<span>.</span></a></li>
+              <li><a href="./pages/contents/life/life.html">life<span>.</span></a></li>
+              <li><a href="./pages/contents/art/art.html">art<span>.</span></a></li>
+            </ul>
+        </div>
 
           <!--------------- navbar ends here --------------->
 
@@ -104,7 +118,7 @@
 
                   <div class="row">
                         <div class="col-lg-7"></div>
-                        <div class="col-lg-4 shirt shirt1 wow fadeInUp" onclick="location.href='shirt1.html'">
+                        <div class="col-lg-4 shirt shirt1 wow fadeInUp" onclick="location.href='pages/shirt/shirt01.html'">
                               <img class="shirt_img" src="https://scontent.fmnl4-6.fna.fbcdn.net/v/t1.0-9/s960x960/102852365_2363503690610436_3545853184423342105_o.jpg?_nc_cat=100&_nc_sid=8024bb&_nc_eui2=AeHmXa_LC0GWvH0g1k_YfepdDYyiF181IkkNjKIXXzUiSQbz0_Zp7AVqm0uE4jh0DAYdaevbb1xt7G5KlnFhAtpP&_nc_ohc=BZVjm9QonAkAX_Iau8x&_nc_ht=scontent.fmnl4-6.fna&_nc_tp=7&oh=da9f2e0a83ffba53d1f236cfb69e6011&oe=5F0E1B28" alt="ivory" width="auto">
                         </div>
                         <div class="col-lg-1"></div>
@@ -214,6 +228,21 @@
             $("#resize").toggleClass("active");
       });
 
+      $(".content-btn").click(function() {
+            $(this).toggleClass('on');
+            $("#sub-menu-resize").toggleClass("active");
+      });
+
+      $(".back-btn").click(function() {
+            $(this).toggleClass('on');
+            $("#sub-menu-resize").toggleClass("active");
+            $("#resize").toggleClass("active");
+      });
+
+      $(".close-content-btn").click(function() {
+            $(this).toggleClass('on');
+            $("#sub-menu-resize").toggleClass("active");
+      });
       // navigation ends here
 
       // nav animation
