@@ -8,7 +8,7 @@ html, body {
       font-family: "Roboto Mono" !important;
       background: #fff !important;
       color: #0f0f0f !important;
-      text-shadow: 0px 1px royalblue,1px 0px red,2px 2px green;
+      text-shadow: 0px -1px royalblue,-1px 0px red,1px 0px green;
 }
 
 .whitespace {
@@ -116,7 +116,6 @@ nav #menu li span {
 
 nav #menu li a {
       color: #0f0f0f;
-      text-shadow: 0px 1px royalblue,1px 0px red;
 }
 
 nav #menu li a:hover {
@@ -808,7 +807,6 @@ textarea:focus {
 .dropbtn{
       background-color: transparent;
       border: none;
-      text-shadow: 0px 1px royalblue,1px 0px red,-1px 0px green;
 
 }
 .dropdown-content {
@@ -840,7 +838,7 @@ textarea:focus {
       line-height: 80px;
       transition: all 0.1s ease-out;
       border: 2px solid rgba(0,0,0,0.2);
-      text-shadow: 0px 1px royalblue,1px 0px red,2px 2px green;
+      text-shadow: 0px -1px royalblue,-1px 0px red,1px 0px green;
 }
 
 .read-more-btn:hover, .view-more-btn:hover{
@@ -852,5 +850,30 @@ textarea:focus {
       line-height: 80px;
       transition: all 0.1s ease-out;
       border: 2px solid rgba(0, 0, 0, 0.6);
-      text-shadow: 0px 1px royalblue,1px 0px red,2px 2px green;
+      text-shadow: 0px -1px royalblue,-1px 0px red,1px 0px green;
+}
+
+/*----breadcrumbs----*/
+ul.breadcrumb {
+      padding: 4px 0px;
+      list-style: none;
+      background-color: transparent;
+      font-weight: lighter;
+}
+ul.breadcrumb a{
+      color: black;
+}
+ul.breadcrumb li {
+      display: inline;
+      font-size: 12px;
+}
+ul.breadcrumb li+li:before {
+      padding: 8px;
+      color: black;
+      content: "/\00a0";
+}
+
+ul.breadcrumb li a:hover {
+      color: black;
+      text-decoration: underline;
 }
