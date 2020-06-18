@@ -787,7 +787,7 @@ textarea:focus {
             width:100%;
             position:absolute;
       }
-      }
+}
 
 .shirt_img, .shirt_img_ind, .content_img, .partner_logo, .about_img{
       max-width: 100%;
@@ -885,4 +885,10 @@ ul.breadcrumb li+li:before {
 ul.breadcrumb li a:hover {
       color: black;
       text-decoration: underline;
+}
+
+@media(min-width: 768px) {
+      .shirt1 h6, .shirt2 h6, .shirt3 h6, .shirt4 h6 {
+            visibility: hidden;
+      }      
 }
