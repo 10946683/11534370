@@ -371,6 +371,10 @@ h6 {
       right: 0;
       bottom: 0;
 }
+.shirt1:hover{
+      text-decoration: underline;
+      cursor: pointer;
+}
 
 .shirt2::after {
       content: "ebony.";
@@ -781,7 +785,7 @@ textarea:focus {
       }
       }
 
-.shirt_img, .content_img, .partner_logo, .about_img{
+.shirt_img, .shirt_img_ind, .content_img, .partner_logo, .about_img{
       max-width: 100%;
       height: auto;
 }
@@ -865,7 +869,7 @@ ul.breadcrumb a{
 }
 ul.breadcrumb li {
       display: inline;
-      font-size: 12px;
+      font-size: 16px;
 }
 ul.breadcrumb li+li:before {
       padding: 8px;
