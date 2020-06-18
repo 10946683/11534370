@@ -389,6 +389,10 @@ h6 {
       bottom: 0;
 }
 
+.shirt2:hover{
+      text-decoration: underline;
+      cursor: pointer;
+}
 .shirt3::after {
       content: "cannabazoid.";
       font-family: "Roboto Mono";
