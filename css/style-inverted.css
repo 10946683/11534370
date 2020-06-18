@@ -892,3 +892,6 @@ ul.breadcrumb li a:hover {
             visibility: hidden;
       }      
 }
+.shirt1 a, .shirt2 a, .shirt3 a, .shirt4 a {
+      color: black;
+}
