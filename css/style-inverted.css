@@ -895,3 +895,8 @@ ul.breadcrumb li a:hover {
 .shirt1 a, .shirt2 a, .shirt3 a, .shirt4 a {
       color: black;
 }
+
+.info p{
+      color: black;
+      font-weight: lighter;
+}
